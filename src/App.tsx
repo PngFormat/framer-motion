@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+        <h1>Motion framer test</h1>
     <CircleText/>
         <CardComponent/>
     </div>

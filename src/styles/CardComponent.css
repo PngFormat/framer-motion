@@ -1,5 +1,7 @@
 .card-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .card {
@@ -7,7 +9,7 @@
     padding: 20px;
     margin: 10px;
     text-align: center;
-    max-width: 200px;
+    max-width: 400px;
     overflow: hidden;
     cursor: pointer;
 }
@@ -16,3 +18,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+.card-beetween {
+    display: flex;
+    align-items: stretch;
+    align-items: center;
+
+}
+
+
