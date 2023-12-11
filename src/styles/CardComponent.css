@@ -24,5 +24,13 @@ img {
     align-items: center;
 
 }
-
+.text-between-cards {
+    width: 400px;
+    font-family: 'Agency FB', sans-serif;
+    font-weight: 400 ;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.5;
+    text-decoration-style: dashed;
+}
 
