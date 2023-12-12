@@ -22,3 +22,10 @@ code {
   display: flex;
   align-items: center;
 }
+.container-photo{
+  background-image: url('https://i.ytimg.com/vi/uTsyptcYjt0/maxresdefault.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-top: 10px;
+}
