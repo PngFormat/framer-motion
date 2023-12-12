@@ -6,6 +6,7 @@ import CircleText from "./components/circleText";
 import CardComponent from "./components/card";
 import Brands from "./components/brands";
 import Board from "./components/board";
+import ScrolImageChange from "./components/ScrolImageChange";
 
 function App() {
   return (
@@ -15,8 +16,10 @@ function App() {
         <h1>Motion framer test</h1>
     <CircleText/>
         <CardComponent/>
-
+        <ScrolImageChange/>
         <Brands/>
+        <Board></Board>
+
     </div>
   );
 }
