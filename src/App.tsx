@@ -7,6 +7,7 @@ import CardComponent from "./components/card";
 import Brands from "./components/brands";
 import Board from "./components/board";
 import ScrolImageChange from "./components/ScrolImageChange";
+import ScrollComponent from "./components/ScrollComponent";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <ScrolImageChange/>
         <Brands/>
         <Board></Board>
+        <ScrollComponent/>
 
     </div>
   );
