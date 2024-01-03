@@ -10,20 +10,23 @@ import ScrolImageChange from "./components/ScrolImageChange";
 import ScrollComponent from "./components/ScrollComponent";
 
 function App() {
-  return (
-    <div className="App" style={{ fontFamily: 'Agency FB'}}>
-      <Header/>
-      <Board></Board>
-        <h1>Motion framer test</h1>
-    <CircleText/>
-        <CardComponent/>
-        <ScrolImageChange/>
-        <Brands/>
-        <Board></Board>
-        <ScrollComponent/>
-
-    </div>
-  );
+    return (
+        <>
+            <div className="App" style={{ fontFamily: 'Agency FB'}}>
+                {/* Components are rendered here */}
+                <Header />
+                <Board></Board>
+                <h1>Motion framer test</h1>
+                <CircleText />
+                <CardComponent />
+                <ScrolImageChange />
+                <Brands />
+                <Board></Board>
+                <ScrollComponent />
+            </div>
+        </>
+    );
 }
+
 
 export default App;
