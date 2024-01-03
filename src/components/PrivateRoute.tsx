@@ -1,20 +1,29 @@
-
-import React from 'react';
+// PrivateRoute.tsx
+import React, { ReactNode } from 'react';
 import { Route, Navigate } from 'react-router-dom';
-import authService from '../services/AuthService';
-import Login from './Login';
+import AuthService from '../services/AuthService';
 
-interface ProtectedRouteProps {
+interface PrivateRouteProps {
     path: string;
-    element: React.ReactNode;
+    children: ReactNode;
 }
 
-const ProtectedRoute: React.FC<ProtectedRouteProps> = ({ path, element }) => {
-    return authService.isAuthenticated() ? (
-        <Route path={path} element={element} />
-    ) : (
-        <Route path={path} element={<Navigate to="/login" />} />
+const PrivateRoute: React.FC<PrivateRouteProps> = ({ children, path }) => {
+    const isAuthenticated = AuthService.isAuthenticated();
+
+    return (
+        <Route
+            path={path}
+            element={isAuthenticated ? (
+                <>{children}</>
+            ) : (
+                <Navigate
+                    to="/login"
+                    state={{ from: path }}
+                />
+            )}
+        />
     );
 };
 
-export default ProtectedRoute;
+export default PrivateRoute;
