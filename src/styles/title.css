@@ -1,0 +1,14 @@
+.big-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.big-header-title {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.big-header-subtitle {
+    font-size: 1.5em;
+    color: #666;
+}

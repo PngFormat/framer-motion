@@ -7,6 +7,8 @@ import CardComponent from "./components/card";
 import Brands from "./components/brands";
 import Board from "./components/board";
 import ScrolImageChange from "./components/ScrolImageChange";
+import TablePhoto from "./components/tablePhoto";
+import BigHeader from "./components/Title";
 
 function App() {
   return (
@@ -17,9 +19,11 @@ function App() {
     <CircleText/>
         <CardComponent/>
         <ScrolImageChange/>
-        {/*<Brands/>*/}
-        <Board imageSrc='https://i.ytimg.com/vi/uTsyptcYjt0/maxresdefault.jpg' children={undefined}></Board>
-
+        <Brands/>
+        <BigHeader title={'Our photos'} subtitle={'photo'}/>
+        <TablePhoto/>
+        <Board imageSrc='https://i.pinimg.com/originals/c5/33/d9/c533d981ea595b230c068f2e22efd50c.png' children={undefined}></Board>
+        <Board imageSrc='https://i.pinimg.com/originals/c5/33/d9/c533d981ea595b230c068f2e22efd50c.png' children={undefined}></Board>
     </div>
   );
 }
