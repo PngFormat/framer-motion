@@ -1,0 +1,28 @@
+.runaway-photo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin: 0 auto;
+    gap: 10px;
+    max-width: 1000px;
+}
+
+.runaway-photo {
+    transition: transform 0.2s ease;
+}
+
+.text-between-cards {
+    font-family: 'Agency FB', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.5;
+    max-width: 250px;
+    margin-left: 10px;
+}
+
+.text-photo {
+    margin: 0;
+    width: 300px;
+}
