@@ -10,6 +10,8 @@ import ScrolImageChange from "./components/ScrolImageChange";
 import TablePhoto from "./components/tablePhoto";
 import BigHeader from "./components/Title";
 import RunAwayPhoto from "./components/RunAwayPhoto";
+import HurricanePhotos from "./components/HurricanePhotos";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -24,6 +26,10 @@ function App() {
         <BigHeader title={'Our photos'} subtitle={'photo'}/>
         <TablePhoto/>
         <RunAwayPhoto src={'https://i.pinimg.com/originals/c5/33/d9/c533d981ea595b230c068f2e22efd50c.png'} alt={'photo'}/>
+        <HurricanePhotos/>
+        <Brands/>
+        <Footer/>
+
     </div>
   );
 }
